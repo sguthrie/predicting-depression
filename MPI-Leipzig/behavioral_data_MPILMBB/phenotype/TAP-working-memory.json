@@ -1,0 +1,55 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Testbatterie zur Aufmerksamkeitsprüfung (TAP_WM) – working memory capacity",
+        "TermURL": ""
+    },
+    "TAP_WM_1": {
+        "Description": "mean reaction time",
+        "Derivative": true,
+    },
+    "TAP_WM_2": {
+        "Description": "median reaction time",
+        "Derivative": true,
+    },
+    "TAP_WM_3": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_WM_4": {
+        "Description": "standard deviations",
+        "Derivative": true,
+    },
+    "TAP_WM_5": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_WM_6": {
+        "Description": "how many correct matches",
+        "Derivative": true,
+    },
+    "TAP_WM_7": {
+        "Description": "how many incorrect matches (errors)",
+        "Derivative": true,
+    },
+    "TAP_WM_8": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_WM_9": {
+        "Description": "how many missed matches (omissions)",
+        "Derivative": true,
+    },
+    "TAP_WM_10": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_WM_11": {
+        "Description": "outliers",
+        "Derivative": true,
+    },
+    "TAP_WM_12": {
+        "Description": "comments",
+        "Derivative": false,
+    },
+}
+

@@ -1,0 +1,18 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Test of Creative Imagery Abilities (TCIA)",
+        "TermURL": ""
+    },
+    "TCIA_Vividness_mean": {
+        "Description": "Vividness",
+        "Derivative": true,
+    },
+    "TCIA_Orig_mean": {
+        "Description": "Originality",
+        "Derivative": true,
+    },
+    "TCIA_Transform_mean": {
+        "Description": "Transformativeness",
+        "Derivative": true,
+    }
+}

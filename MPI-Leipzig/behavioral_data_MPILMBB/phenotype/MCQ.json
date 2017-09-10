@@ -1,0 +1,26 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Metacognition (MCQ-30)",
+        "TermURL": ""
+    },
+    "MCQ_lack_of_cogn_conf_mean": {
+        "Description": "(Lack of) Cognitive Confidence",
+        "Derivative": true,
+    },
+    "MCQ_pos_bel_about_worry_mean": {
+        "Description": "Positive Beliefs about Worry",
+        "Derivative": true,
+    },
+    "MCQ_cogn_self-consc_mean": {
+        "Description": "Cognitive Self-Consciousness",
+        "Derivative": true,
+    },
+    "MCQ_neg_bel_about_uncontr_danger_mean": {
+        "Description": "Negative Beliefs about Uncontrollability and Danger",
+        "Derivative": true,
+    },
+    "MCQ_need_contr_thoughts_mean": {
+        "Description": "Need to Control Thoughts",
+        "Derivative": true,
+    }
+}

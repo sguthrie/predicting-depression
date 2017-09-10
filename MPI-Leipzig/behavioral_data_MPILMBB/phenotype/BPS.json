@@ -1,0 +1,10 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Boredom Proneness Scale (BPS)",
+        "TermURL": ""
+    },
+    "BPS_sum": {
+        "Description": "Boredom Proneness",
+        "Derivative": true,
+    }
+}

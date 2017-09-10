@@ -1,0 +1,10 @@
+{
+    "MeasurementToolMetadata": {
+         "Description": "Epworth Sleepiness Scale (ESS)",
+         "TermURL": ""
+     },
+     "ESS_summary_sum": {
+         "Description": "Daily Sleepiness",
+         "Derivative": true,
+     }
+}

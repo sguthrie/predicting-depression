@@ -1,0 +1,14 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Behavioral Inhibition and Approach System (BIS/BAS)",
+        "TermURL": ""
+    },
+    "BISBAS_BIS_sum": {
+        "Description": "Behavioral Inhibition System",
+        "Derivative": true,
+    },
+    "BISBAS_BAS_sum": {
+        "Description": "Behavioral Approach System",
+        "Derivative": true,
+    }
+}

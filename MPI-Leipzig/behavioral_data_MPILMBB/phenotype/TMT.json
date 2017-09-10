@@ -1,0 +1,51 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Trail Making Test – visual/spatial search & reaction change",
+        "TermURL": ""
+    },
+    "TMT_1": {
+        "Description": "[A] time it took to connect numbers (seconds. milliseconds)",
+        "Derivative": true,
+    },
+    "TMT_2": {
+        "Description": "[A] brain functions based on performance for Trail A (Reitan & Wolfson, 1988)",
+        "Derivative": true,
+        "Levels": {
+          "1" : "perfectly normal",
+          "2" : "normal",
+          "3" : "mild/moderately impaired",
+          "4" : "moderately/severely impaired"
+        }
+    },
+    "TMT_3": {
+        "Description": "[A] how many errors did the pp. make",
+        "Derivative": true,
+    },
+    "TMT_4": {
+        "Description": "[A] comments",
+        "Derivative": true,
+    },
+    "TMT_5": {
+        "Description": "[B] time it took to connect numbers and letters (seconds. milliseconds)",
+        "Derivative": true,
+    },
+    "TMT_6": {
+        "Description": "[B] brain functions based on performance for Trail B (Reitan & Wolfson, 1988)",
+        "Derivative": true,
+        "Levels": {
+          "1" : "perfectly normal",
+          "2" : "normal",
+          "3" : "mild/moderately impaired",
+          "4" : "moderately/severely impaired"
+        }
+    },
+    "TMT_7": {
+        "Description": "[B] how many errors did the pp. make",
+        "Derivative": true,
+    },
+    "TMT_8": {
+        "Description": "[B] comments",
+        "Derivative": true,
+    },
+
+}

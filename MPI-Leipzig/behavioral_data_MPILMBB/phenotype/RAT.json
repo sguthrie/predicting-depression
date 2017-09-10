@@ -1,0 +1,19 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Remote Associates Task (RAT)",
+        "TermURL": ""
+    },
+    "RAT_CORRECT_NR": {
+        "Description": "Number of correct responses",
+        "Derivative": true,
+    },
+    "RAT_PERCENT": {
+        "Description": "Percent of correct responses",
+        "Derivative": true,
+    },
+    "RAT_Rtmeanforcorrectanswers": {
+        "Description": "Mean reaction time for correct responses",
+        "Derivative": true,
+    }
+}
+

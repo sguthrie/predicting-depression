@@ -1,0 +1,94 @@
+{
+    "MeasurementToolMetadata": {
+        "Description": "Beck's Depression Inventory II",
+        "TermURL": ""
+    },
+    "BDI_sum_1": {
+      "Description": "BDI Item 1",
+      "Derivative": true
+    },
+    "BDI_sum_2": {
+      "Description": "BDI Item 2",
+      "Derivative": true
+    },
+    "BDI_sum_3": {
+      "Description": "BDI Item 3",
+      "Derivative": true
+    },
+    "BDI_sum_4": {
+      "Description": "BDI Item 4",
+      "Derivative": true
+    },
+    "BDI_sum_5": {
+      "Description": "BDI Item 5",
+      "Derivative": true
+    },
+    "BDI_sum_6": {
+      "Description": "BDI Item 6",
+      "Derivative": true
+    },
+    "BDI_sum_7": {
+      "Description": "BDI Item 7",
+      "Derivative": true
+    },
+    "BDI_sum_8": {
+      "Description": "BDI Item 8",
+      "Derivative": true
+    },
+    "BDI_sum_9": {
+      "Description": "BDI Item 9",
+      "Derivative": true
+    },
+    "BDI_sum_10": {
+      "Description": "BDI Item 10",
+      "Derivative": true
+    },
+    "BDI_sum_11": {
+      "Description": "BDI Item 11",
+      "Derivative": true
+    },
+    "BDI_sum_12": {
+      "Description": "BDI Item 12",
+      "Derivative": true
+    },
+    "BDI_sum_13": {
+      "Description": "BDI Item 13",
+      "Derivative": true
+    },
+    "BDI_sum_14": {
+      "Description": "BDI Item 14",
+      "Derivative": true
+    },
+    "BDI_sum_15": {
+      "Description": "BDI Item 15",
+      "Derivative": true
+    },
+    "BDI_sum_16": {
+      "Description": "BDI Item 16",
+      "Derivative": true
+    },
+    "BDI_sum_17": {
+      "Description": "BDI Item 17",
+      "Derivative": true
+    },
+    "BDI_sum_18": {
+      "Description": "BDI Item 18",
+      "Derivative": true
+    },
+    "BDI_sum_19": {
+      "Description": "BDI Item 19",
+      "Derivative": true
+    },
+    "BDI_sum_20": {
+      "Description": "BDI Item 20",
+      "Derivative": true
+    },
+    "BDI_sum_21": {
+      "Description": "BDI Item 21",
+      "Derivative": true
+    },
+    "BDI_summary_sum": {
+        "Description": "Level of depression",
+        "Derivative": true,
+    }
+}

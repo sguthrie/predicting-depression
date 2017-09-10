@@ -1,0 +1,10 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Self-Esteem Scale (SE)",
+        "TermURL": ""
+    },
+    "SE_Mean_SelfEst": {
+        "Description": "Self-Esteem",
+        "Derivative": true,
+    }
+}

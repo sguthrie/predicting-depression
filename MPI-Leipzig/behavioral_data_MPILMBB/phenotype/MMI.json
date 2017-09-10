@@ -1,0 +1,10 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Multimedia Multitasking Index (MMI)",
+        "TermURL": ""
+    },
+    "MMI_score": {
+        "Description": "Multimedia Multitasking",
+        "Derivative": true,
+    }
+}

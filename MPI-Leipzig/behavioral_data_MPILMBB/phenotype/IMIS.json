@@ -1,0 +1,22 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Involuntary Musical Imagery Scale (IMIS)",
+        "TermURL": ""
+    },
+    "IMIS_NegVal_sum": {
+        "Description": "Negative Valence",
+        "Derivative": true,
+    },
+    "IMIS_Help_sum": {
+        "Description": "Help",
+        "Derivative": true,
+    },
+    "IMIS_Movement_sum": {
+        "Description": "Movement",
+        "Derivative": true,
+    },
+    "IMIS_PersRef_sum": {
+        "Description": "Personal Reflections",
+        "Derivative": true,
+    }
+}

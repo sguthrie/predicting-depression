@@ -1,0 +1,14 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Hospital Anxiety and Depression Scale (HADS)",
+        "TermURL": ""
+    },
+    "HADS-A_summary_sum": {
+        "Description": "Anxiety",
+        "Derivative": true,
+    },
+    "HADS-D_summary_sum": {
+        "Description": "Depression",
+        "Derivative": true,
+    },
+}

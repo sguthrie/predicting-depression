@@ -1,0 +1,26 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Five facets of mindfulness (FFMQ)",
+        "TermURL": ""
+    },
+    "FFMQ_observe_sum": {
+        "Description": "Observe",
+        "Derivative": true,
+    },
+    "FFMQ_describe_sum": {
+        "Description": "Describe",
+        "Derivative": true,
+    },
+    "FFMQ_act_awareness_sum": {
+        "Description": "Act with Awareness",
+        "Derivative": true,
+    },
+    "FFMQ_nonjudge_sum": {
+        "Description": "Nonjudge",
+        "Derivative": true,
+    },
+    "FFMQ_nonreact_sum": {
+        "Description": "Nonreact",
+        "Derivative": true,
+    }
+}

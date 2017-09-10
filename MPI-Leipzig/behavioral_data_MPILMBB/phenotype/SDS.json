@@ -1,0 +1,10 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Social Desireability Scale (SDS-17)",
+        "TermURL": ""
+    },
+    "SDS_sum": {
+        "Description": "Social Desireability",
+        "Derivative": true,
+    }
+}

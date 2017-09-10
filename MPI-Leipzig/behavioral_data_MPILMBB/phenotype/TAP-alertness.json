@@ -1,0 +1,74 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Testbatterie zur Aufmerksamkeitsprüfung (TAP_A) – reaction speed",
+        "TermURL": ""
+    },
+    "TAP_A_1": {
+        "Description": "reaction time medians for 1. round (no signal)",
+        "Derivative": true,
+    },
+    "TAP_A_2": {
+        "Description": "reaction time medians for 2. round (signal)",
+        "Derivative": true,
+    },
+    "TAP_A_3": {
+        "Description": "reaction time medians for 3. round (signal)",
+        "Derivative": true,
+    },
+    "TAP_A_4": {
+        "Description": "reaction time medians for 4. round (no signal)",
+        "Derivative": true,
+    },
+    "TAP_A_5": {
+        "Description": "mean reaction time (no signal)",
+        "Derivative": true,
+    },
+    "TAP_A_6": {
+        "Description": "median reaction time (no signal)",
+        "Derivative": true,
+    },
+    "TAP_A_7": {
+        "Description": "% (no signal)",
+        "Derivative": true,
+    },
+    "TAP_A_8": {
+        "Description": "standard deviations (no signal)",
+        "Derivative": true,
+    },
+    "TAP_A_9": {
+        "Description": "% (no signal)",
+        "Derivative": true,
+    },
+    "TAP_A_10": {
+        "Description": "mean reaction time (signal)",
+        "Derivative": true,
+    },
+    "TAP_A_11": {
+        "Description": "median reaction time (signal)",
+        "Derivative": true,
+    },
+    "TAP_A_12": {
+        "Description": "% (signal)",
+        "Derivative": true,
+    },
+    "TAP_A_13": {
+        "Description": "standard deviations (signal)",
+        "Derivative": true,
+    },
+    "TAP_A_14": {
+        "Description": "% (signal)",
+        "Derivative": true,
+    },
+    "TAP_A_15": {
+        "Description": "phasic alertness",
+        "Derivative": true,
+    },
+    "TAP_A_16": {
+        "Description": "% (phasic alertness)",
+        "Derivative": true,
+    },
+    "TAP_A_17": {
+        "Description": "comments",
+        "Derivative": true,
+    },
+}

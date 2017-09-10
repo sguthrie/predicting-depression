@@ -1,0 +1,140 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Mobile Phone Usage (MPU)",
+        "TermURL": ""
+    },
+    "MPU_1": {
+        "Description": "Do you own a cell phone?",
+        "Derivative": false,
+        "Levels": {
+          "0": "no",
+          "1": "yes"
+        }
+    },
+    "MPU_2": {
+        "Description": "How often do you carry you cell phone with you?",
+        "Derivative": false,
+        "Levels": {
+          "A1": "the whole day",
+          "A2": "most time of the day",
+          "A3": "a couple of hours a day"
+        }
+    },
+    "MPU_3": {
+        "Description": "How many text messages do you send a week (on average)?",
+        "Derivative": false,
+    },
+    "MPU_4": {
+        "Description": "How many phone calls (using your mobile phone) do you make/take per week (on average)?",
+        "Derivative": false,
+    },
+    "MPU_5": {
+        "Description": "Do you own a smartphone (iPhone, Android etc. - a multipurpose phone with internet connection)?",
+        "Derivative": false,
+        "Levels": {
+          "0": "no",
+          "1": "yes"
+        }
+    },
+    "MPU_6": {
+        "Description": "Do you have a flat internet rate?",
+        "Derivative": false,
+    },
+    "MPU_7": {
+        "Description": "How long have you been using a smartphone?",
+        "Derivative": false,
+    },
+    "MPU_8": {
+        "Description": "Do you use your smartphone to browse the web? If yes, how often do you look up facts on your phone in a social situations?",
+        "Derivative": false,
+        "Levels": {
+          "A1": "never",
+          "A2": "sometimes",
+          "A3": "often"
+        }
+    },
+    "MPU_9": {
+        "Description": "Do you use your smartphone to check your emails? If yes, do you get a notification each time you get a new email or do you have to check it manually?",
+        "Derivative": false,
+    },
+    "MPU_10": {
+        "Description": "If manually, how often?",
+        "Derivative": false,
+        "Levels": {
+          "A1": "never",
+          "A2": "sometimes",
+          "A3": "often"
+        }
+    },
+    "MPU_11": {
+        "Description": "Do you use your phone for social networking (Facebook, Twitter, Google+ etc.)?",
+        "Derivative": false,
+        "Levels": {
+          "A1": "never",
+          "A2": "sometimes",
+          "A3": "often"
+        }
+    },
+    "MPU_12": {
+        "Description": "Do you post messages (including tweets) to social networks using your phone (as opposed to just reading)?",
+        "Derivative": false,
+    },
+    "MPU_13": {
+        "Description": "Do you use your phone instant messaging (Viber, WhatsUp, Google chat, Facebook messaging, etc.)?",
+        "Derivative": false,
+        "Levels": {
+          "A1": "never",
+          "A2": "sometimes",
+          "A3": "often"
+        }
+    },
+    "MPU_14": {
+        "Description": "Do you use you phone to check the news?",
+        "Derivative": false,
+        "Levels": {
+          "A1": "never",
+          "A2": "sometimes",
+          "A3": "often"
+        }
+    },
+    "MPU_15": {
+        "Description": "Do you use your phone to take and share pictures?",
+        "Derivative": false,
+        "Levels": {
+          "A1": "never",
+          "A2": "sometimes",
+          "A3": "often"
+        }
+    },
+    "MPU_16": {
+        "Description": "In a social situation such as a dinner with friends, how often do you have an urge to check your phone (to check the news, Facebook, etc.)?",
+        "Derivative": false,
+        "Levels": {
+          "A1": "never",
+          "A2": "sometimes",
+          "A3": "often"
+        }
+    },
+    "MPU_17": {
+        "Description": "How often do you resist this urge due to a social pressure?",
+        "Derivative": false,
+        "Levels": {
+          "A1": "never",
+          "A2": "sometimes",
+          "A3": "often"
+        }
+    },
+    "MPU_18": {
+        "Description": "Do you read printed newspapers/magazines?",
+        "Derivative": false,
+        "Levels": {
+          "A1": "never",
+          "A2": "sometimes",
+          "A3": "often"
+        }
+    },
+    "MPU_19": {
+        "Description": "How many books do you read a year?",
+        "Derivative": false,
+    },
+}

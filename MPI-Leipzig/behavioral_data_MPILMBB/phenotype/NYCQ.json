@@ -1,0 +1,346 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "The New York Cognition Questionnaire (NYCQ)",
+        "TermURL": ""
+    },
+    "NYCQ_post-ses-01_1": {
+        "Description": "Post ses-01 MRI: I thought about things I am currently worried about",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_2": {
+        "Description": "Post ses-01 MRI: I thought about people I have just recently met",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_3": {
+        "Description": "Post ses-01 MRI: I thought of people I have known for a long time (friends)",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_4": {
+        "Description": "Post ses-01 MRI: I thought about members of my family",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_5": {
+        "Description": "Post ses-01 MRI: I thought about an event that took place earlier today",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_6": {
+        "Description": "Post ses-01 MRI: I thought about an interaction I may possibly have in the future",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_7": {
+        "Description": "Post ses-01 MRI: I thought about an interaction with somebody that took place in the past",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_8": {
+        "Description": "Post ses-01 MRI: I thought about something that happened at a place very close to me",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_9": {
+        "Description": "Post ses-01 MRI: I thought about something that made me feel guilty",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_10": {
+        "Description": "Post ses-01 MRI: I thought about an event that may take place later today",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_11": {
+        "Description": "Post ses-01 MRI: I thought about something that happened in the recent past (last couple of days but not today)",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_12": {
+        "Description": "Post ses-01 MRI: I thought about something that happened a long time ago in the past",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_13": {
+        "Description": "Post ses-01 MRI: I thought about something that made me angry",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_14": {
+        "Description": "Post ses-01 MRI: I thought about something that made me happy",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_15": {
+        "Description": "Post ses-01 MRI: I thought about something that made me cheerful",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_16": {
+        "Description": "Post ses-01 MRI: I thought about something that made me calm",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_17": {
+        "Description": "Post ses-01 MRI: I thought about something that made me sad",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_18": {
+        "Description": "Post ses-01 MRI: I thought about something that is important to me",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_19": {
+        "Description": "Post ses-01 MRI: I thought about something that could still happen today",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_20": {
+        "Description": "Post ses-01 MRI: I thought about something that may take place in the distant future",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_21": {
+        "Description": "Post ses-01 MRI: I thought about something that could take place in the near future (days or weeks but not today)",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_22": {
+        "Description": "Post ses-01 MRI: I thought about personal worries",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_23": {
+        "Description": "Post ses-01 MRI: I thought about something that happened in a place far away from where I am now",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_24": {
+        "Description": "Post ses-01 MRI: During the MRI, my thoughts were in the form of images",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_25": {
+        "Description": "Post ses-01 MRI: During the MRI, my thoughts were in the form of words",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_26": {
+        "Description": "Post ses-01 MRI: During the MRI, my thoughts were like an inner monologue or audiobook",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_27": {
+        "Description": "Post ses-01 MRI: During the MRI, my thoughts were like a television program or film",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_28": {
+        "Description": "Post ses-01 MRI: During the MRI, my thoughts had a strong and consistent personal narrative",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_29": {
+        "Description": "Post ses-01 MRI: During the MRI, my thoughts had a clear sense of purpose",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_30": {
+        "Description": "Post ses-01 MRI: During the MRI, my thoughts were vague and non-specific",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-01_31": {
+        "Description": "Post ses-01 MRI: During the MRI, my thoughts were fragmented and disjointed",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_1": {
+        "Description": "Post ses-02 MRI: I thought about things I am currently worried about",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_2": {
+        "Description": "Post ses-02 MRI: I thought about people I have just recently met",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_3": {
+        "Description": "Post ses-02 MRI: I thought of people I have known for a long time (friends)",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_4": {
+        "Description": "Post ses-02 MRI: I thought about members of my family",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_5": {
+        "Description": "Post ses-02 MRI: I thought about an event that took place earlier today",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_6": {
+        "Description": "Post ses-02 MRI: I thought about an interaction I may possibly have in the future",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_7": {
+        "Description": "Post ses-02 MRI: I thought about an interaction with somebody that took place in the past",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_8": {
+        "Description": "Post ses-02 MRI: I thought about something that happened at a place very close to me",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_9": {
+        "Description": "Post ses-02 MRI: I thought about something that made me feel guilty",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_10": {
+        "Description": "Post ses-02 MRI: I thought about an event that may take place later today",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_11": {
+        "Description": "Post ses-02 MRI: I thought about something that happened in the recent past (last couple of days but not today)",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_12": {
+        "Description": "Post ses-02 MRI: I thought about something that happened a long time ago in the past",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_13": {
+        "Description": "Post ses-02 MRI: I thought about something that made me angry",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_14": {
+        "Description": "Post ses-02 MRI: I thought about something that made me happy",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_15": {
+        "Description": "Post ses-02 MRI: I thought about something that made me cheerful",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_16": {
+        "Description": "Post ses-02 MRI: I thought about something that made me calm",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_17": {
+        "Description": "Post ses-02 MRI: I thought about something that made me sad",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_18": {
+        "Description": "Post ses-02 MRI: I thought about something that is important to me",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_19": {
+        "Description": "Post ses-02 MRI: I thought about something that could still happen today",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_20": {
+        "Description": "Post ses-02 MRI: I thought about something that may take place in the distant future",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_21": {
+        "Description": "Post ses-02 MRI: I thought about something that could take place in the near future (days or weeks but not today)",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_22": {
+        "Description": "Post ses-02 MRI: I thought about personal worries",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_23": {
+        "Description": "Post ses-02 MRI: I thought about something that happened in a place far away from where I am now",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_24": {
+        "Description": "Post ses-02 MRI: During the MRI, my thoughts were in the form of images",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_25": {
+        "Description": "Post ses-02 MRI: During the MRI, my thoughts were in the form of words",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_26": {
+        "Description": "Post ses-02 MRI: During the MRI, my thoughts were like an inner monologue or audiobook",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_27": {
+        "Description": "Post ses-02 MRI: During the MRI, my thoughts were like a television program or film",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_28": {
+        "Description": "Post ses-02 MRI: During the MRI, my thoughts had a strong and consistent personal narrative",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_29": {
+        "Description": "Post ses-02 MRI: During the MRI, my thoughts had a clear sense of purpose",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_30": {
+        "Description": "Post ses-02 MRI: During the MRI, my thoughts were vague and non-specific",
+        "Derivative": false
+    },
+    "NYCQ_post-ses-02_31": {
+        "Description": "Post ses-02 MRI: During the MRI, my thoughts were fragmented and disjointed",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_1": {
+        "Description": "Post tasks: I thought about things I am currently worried about",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_2": {
+        "Description": "Post tasks: I thought about people I have just recently met",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_3": {
+        "Description": "Post tasks: I thought of people I have known for a long time (friends)",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_4": {
+        "Description": "Post tasks: I thought about members of my family",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_5": {
+        "Description": "Post tasks: I thought about an event that took place earlier today",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_6": {
+        "Description": "Post tasks: I thought about an interaction I may possibly have in the future",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_7": {
+        "Description": "Post tasks: I thought about an interaction with somebody that took place in the past",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_8": {
+        "Description": "Post tasks: I thought about something that happened at a place very close to me",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_9": {
+        "Description": "Post tasks: I thought about something that made me feel guilty",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_10": {
+        "Description": "Post tasks: I thought about an event that may take place later today",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_11": {
+        "Description": "Post tasks: I thought about something that happened in the recent past (last couple of days but not today)",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_12": {
+        "Description": "Post tasks: I thought about something that happened a long time ago in the past",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_13": {
+        "Description": "Post tasks: I thought about something that made me angry",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_14": {
+        "Description": "Post tasks: I thought about something that made me happy",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_15": {
+        "Description": "Post tasks: I thought about something that made me cheerful",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_16": {
+        "Description": "Post tasks: I thought about something that made me calm",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_17": {
+        "Description": "Post tasks: I thought about something that made me sad",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_18": {
+        "Description": "Post tasks: I thought about something that is important to me",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_19": {
+        "Description": "Post tasks: I thought about something that could still happen today",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_20": {
+        "Description": "Post tasks: I thought about something that may take place in the distant future",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_21": {
+        "Description": "Post tasks: I thought about something that could take place in the near future (days or weeks but not today)",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_22": {
+        "Description": "Post tasks: I thought about personal worries",
+        "Derivative": false
+    },
+    "NYCQ_post-tasks_23": {
+        "Description": "Post tasks: I thought about something that happened in a place far away from where I am now",
+        "Derivative": false
+    }
+}

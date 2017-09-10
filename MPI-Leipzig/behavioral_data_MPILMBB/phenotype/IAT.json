@@ -1,0 +1,10 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Internet Addiction Test (IAT)",
+        "TermURL": ""
+    },
+    "IAT_sum": {
+        "Description": "Internet addiction",
+        "Derivative": true,
+    }
+}

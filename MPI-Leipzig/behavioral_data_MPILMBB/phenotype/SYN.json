@@ -1,0 +1,14 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Synesthesia color picker test (SYN)",
+        "TermURL": ""
+    },
+    "SYN_consistency": {
+        "Description": "Consistency",
+        "Derivative": true,
+    },
+    "SYN_notes": {
+        "Description": "Examiner notes",
+        "Derivative": true,
+    },
+}

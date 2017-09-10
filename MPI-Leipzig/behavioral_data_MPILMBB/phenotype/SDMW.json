@@ -1,0 +1,14 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Spontaneous and Deliberate Mind-Wandering (S-D-MW)",
+        "TermURL": ""
+    },
+    "S-D-MW_delib_mean": {
+        "Description": "Deliberate mind-wandering",
+        "Derivative": true,
+    },
+    "S-D-MW_spont_mean": {
+        "Description": "Spontaneous mind-wandering",
+        "Derivative": true,
+    }
+}

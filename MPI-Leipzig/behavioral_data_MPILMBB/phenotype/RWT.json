@@ -1,0 +1,102 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Regensburger Wortflüssigkeits-Test (RWT) - fluidness of ideas & cognitive flexibilty",
+        "TermURL": ""
+    },
+    "RWT_1": {
+        "Description": "[S-words] how many s-words did the participant name during the first minute (according to rules)",
+        "Derivative": true,
+    },
+    "RWT_2": {
+        "Description": "[S-words] percentile rank of correct words for the subtest 's-words' (1 minute)",
+        "Derivative": true,
+    },
+    "RWT_3": {
+        "Description": "[S-words] how many repetitions during the first minutehow many rule breaks during the first minute",
+        "Derivative": true,
+    },
+    "RWT_4": {
+        "Description": "[S-words] how many rule breaks during the first minute",
+        "Derivative": true,
+    },
+    "RWT_5": {
+        "Description": "[S-words] how many s-words did the participant name during the second minute (according to rules)",
+        "Derivative": true,
+    },
+    "RWT_6": {
+        "Description": "[S-words] how many repetitions during the second minute",
+        "Derivative": true,
+    },
+    "RWT_7": {
+        "Description": "[S-words] how many rule breaks during the second minute",
+        "Derivative": true,
+    },
+    "RWT_8": {
+        "Description": "[S-words] how many s-words did the pp. name in total (according to rules); two minutes",
+        "Derivative": true,
+    },
+    "RWT_9": {
+        "Description": "[S-words] percentile rank of correct words for the subtest 's-words' (2 minutes)",
+        "Derivative": true,
+    },
+    "RWT_10": {
+        "Description": "[S-words] how many repetitions in total; two minutes",
+        "Derivative": true,
+    },
+    "RWT_11": {
+        "Description": "[S-words] how many rule breaks in total; two minutes",
+        "Derivative": true,
+    },
+    "RWT_12": {
+        "Description": "[S-words] comments",
+        "Derivative": true,
+    },
+    "RWT_13": {
+        "Description": "[Animals] how many animals did the participant. name in the first minute (according to rules)",
+        "Derivative": true,
+    },
+    "RWT_14": {
+        "Description": "[Animals] percentile rank of correct words for the subtest 'animal' (1 minute)",
+        "Derivative": true,
+    },
+    "RWT_15": {
+        "Description": "[Animals] how many repetitions during the first minute",
+        "Derivative": true,
+    },
+    "RWT_16": {
+        "Description": "[Animals] how many rule breaks during the first minute",
+        "Derivative": true,
+    },
+    "RWT_17": {
+        "Description": "[Animals] how many animals did the pp. name during the second minute (according to rules)",
+        "Derivative": true,
+    },
+    "RWT_18": {
+        "Description": "[Animals] how many repetitions during the second minute",
+        "Derivative": true,
+    },
+    "RWT_19": {
+        "Description": "[Animals] how many rule breaks during the second minute",
+        "Derivative": true,
+    },
+    "RWT_20": {
+        "Description": "[Animals] how many animals did the pp. name in total (according to rules); two minutes",
+        "Derivative": true,
+    },
+    "RWT_21": {
+        "Description": "[Animals] percentile rank of correct words for the subtest 'animals' (2 minutes)",
+        "Derivative": true,
+    },
+    "RWT_22": {
+        "Description": "[Animals] how many repetitions in total; two minutes",
+        "Derivative": true,
+    },
+    "RWT_23": {
+        "Description": "[Animals] how many rule breaks in total; two minutes",
+        "Derivative": true,
+    },
+    "RWT_24": {
+        "Description": "[Animals] comments",
+        "Derivative": true,
+}
+

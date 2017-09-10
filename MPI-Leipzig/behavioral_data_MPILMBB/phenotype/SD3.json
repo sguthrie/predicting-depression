@@ -1,0 +1,18 @@
+{
+    "MeasurementToolMetadata": {
+         "Description": "Short Dark Triad (SD3)",
+         "TermURL": ""
+     },
+     "SD3_Mach_sum": {
+         "Description": "Machiavellianism",
+         "Derivative": true,
+     },
+     "SD3_Narc_sum": {
+         "Description": "Narcissism",
+         "Derivative": true,
+     },
+     "SD3_Psycho_sum": {
+         "Description": "Psychopathy",
+         "Derivative": true,
+     },
+}

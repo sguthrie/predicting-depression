@@ -1,0 +1,146 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Revised NEO Personality Inventory (NEO PI-R)",
+        "TermURL": ""
+    },
+    "NEO_N": {
+        "Description": "Neuroticism",
+        "Derivative": true,
+    },
+    "NEO_N1_anx": {
+        "Description": "Anxiety",
+        "Derivative": true,
+    },
+    "NEO_N2_host": {
+        "Description": "Hostility",
+        "Derivative": true,
+    },
+    "NEO_N3_depr": {
+        "Description": "Depression",
+        "Derivative": true,
+    },
+    "NEO_N4_selfcon": {
+        "Description": "Self-consciousness",
+        "Derivative": true,
+    },
+    "NEO_N5_imp": {
+        "Description": "Impulsiveness",
+        "Derivative": true,
+    },
+    "NEO_N6_vuln": {
+        "Description": "Vulnerability to Stress",
+        "Derivative": true,
+    },
+    "NEO_E": {
+        "Description": "Extraversion",
+        "Derivative": true,
+    },
+    "NEO_E1_warm": {
+        "Description": "Warmth",
+        "Derivative": true,
+    },
+    "NEO_E2_greg": {
+        "Description": "Gregariousness",
+        "Derivative": true,
+    },
+    "NEO_E3_ass": {
+        "Description": "Assertiveness",
+        "Derivative": true,
+    },
+    "NEO_E4_act": {
+        "Description": "Activity",
+        "Derivative": true,
+    },
+    "NEO_E5_excseek": {
+        "Description": "Excitement Seeking",
+        "Derivative": true,
+    },
+    "NEO_E6_PosEmo": {
+        "Description": "Positive Emotion",
+        "Derivative": true,
+    },
+    "NEO_O": {
+        "Description": "Openness to experience",
+        "Derivative": true,
+    },
+    "NEO_O1_fan": {
+        "Description": "Fantasy",
+        "Derivative": true,
+    },
+    "NEO_O2_aest": {
+        "Description": "Aesthetics",
+        "Derivative": true,
+    },
+    "NEO_O3_feel": {
+        "Description": "Feelings",
+        "Derivative": true,
+    },
+    "NEO_O4_act": {
+        "Description": "Actions",
+        "Derivative": true,
+    },
+    "NEO_O5_idea": {
+        "Description": "Ideas",
+        "Derivative": true,
+    },
+    "NEO_O6_value": {
+        "Description": "Values",
+        "Derivative": true,
+    },
+    "NEO_A": {
+        "Description": "Agreeableness",
+        "Derivative": true,
+    },
+    "NEO_A1_trust": {
+        "Description": "Trust",
+        "Derivative": true,
+    },
+    "NEO_A2_sf": {
+        "Description": "Straightforwardness",
+        "Derivative": true,
+    },
+    "NEO_A3_altr": {
+        "Description": "Altruism",
+        "Derivative": true,
+    },
+    "NEO_A4_compl": {
+        "Description": "Compliance",
+        "Derivative": true,
+    },
+    "NEO_A5_modes": {
+        "Description": "Modesty",
+        "Derivative": true,
+    },
+    "NEO_A6_tenmind": {
+        "Description": "Tendermindedness",
+        "Derivative": true,
+    },
+    "NEO_C": {
+        "Description": "Conscientiousness",
+        "Derivative": true,
+    },
+    "NEO_C1_comp": {
+        "Description": "Competence",
+        "Derivative": true,
+    },
+    "NEO_C2_order": {
+        "Description": "Order",
+        "Derivative": true,
+    },
+    "NEO_C3_dutif": {
+        "Description": "Dutifulness",
+        "Derivative": true,
+    },
+    "NEO_C4_achstr": {
+        "Description": "Achievement Striving",
+        "Derivative": true,
+    },
+    "NEO_C5_selfdis": {
+        "Description": "Self-Discipline",
+        "Derivative": true,
+    },
+    "NEO_C6_deli": {
+        "Description": "Deliberation",
+        "Derivative": true,
+    },
+}

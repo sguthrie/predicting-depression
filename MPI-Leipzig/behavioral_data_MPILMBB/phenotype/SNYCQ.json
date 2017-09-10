@@ -1,0 +1,342 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Short New York Cognition Questionnaire (S-NYCQ)",
+        "TermURL": ""
+    },
+    "SNYCQ_pre-ses-02_positive": {
+        "Description": "emotionally positive content",
+        "Derivative": false,
+    },
+    "SNYCQ_pre-ses-02_negative": {
+        "Description": "emotionally negative content",
+        "Derivative": false,
+    },
+    "SNYCQ_pre-ses-02_future": {
+        "Description": "future related content",
+        "Derivative": false,
+    },
+    "SNYCQ_pre-ses-02_past": {
+        "Description": "past related content",
+        "Derivative": false,
+    },
+    "SNYCQ_pre-ses-02_myself": {
+        "Description": "content about myself",
+        "Derivative": false,
+    },
+    "SNYCQ_pre-ses-02_people": {
+        "Description": "content about others",
+        "Derivative": false,
+    },
+    "SNYCQ_pre-ses-02_surrpundings": {
+        "Description": "content about the actual surrounding environment",
+        "Derivative": false,
+    },
+    "SNYCQ_pre-ses-02_vigilance": {
+        "Description": "state of vigilance",
+        "Derivative": false,
+    },
+    "SNYCQ_pre-ses-02_images": {
+        "Description": "form of thoughts in images",
+        "Derivative": false,
+    },
+    "SNYCQ_pre-ses-02_words": {
+        "Description": "form of thoughts in words",
+        "Derivative": false,
+    },
+    "SNYCQ_pre-ses-02_vague": {
+        "Description": "vague to specific form of thoughts",
+        "Derivative": false,
+    },
+    "SNYCQ_pre-ses-02_intrusive": {
+        "Description": "thoughts have a intrusive nature",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-AP_positive": {
+        "Description": "emotionally positive content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-AP_negative": {
+        "Description": "emotionally negative content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-AP_future": {
+        "Description": "future related content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-AP_past": {
+        "Description": "past related content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-AP_myself": {
+        "Description": "content about myself",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-AP_people": {
+        "Description": "content about others",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-AP_surrpundings": {
+        "Description": "content about the actual surrounding environment",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-AP_vigilance": {
+        "Description": "state of vigilance",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-AP_images": {
+        "Description": "form of thoughts in images",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-AP_words": {
+        "Description": "form of thoughts in words",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-AP_vague": {
+        "Description": "vague to specific form of thoughts",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-AP_intrusive": {
+        "Description": "thoughts have a intrusive nature",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-PA_positive": {
+        "Description": "emotionally positive content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-PA_negative": {
+        "Description": "emotionally negative content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-PA_future": {
+        "Description": "future related content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-PA_past": {
+        "Description": "past related content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-PA_myself": {
+        "Description": "content about myself",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-PA_people": {
+        "Description": "content about others",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-PA_surrpundings": {
+        "Description": "content about the actual surrounding environment",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-PA_vigilance": {
+        "Description": "state of vigilance",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-PA_images": {
+        "Description": "form of thoughts in images",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-PA_words": {
+        "Description": "form of thoughts in words",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-PA_vague": {
+        "Description": "vague to specific form of thoughts",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-01-acq-PA_intrusive": {
+        "Description": "thoughts have a intrusive nature",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-AP_positive": {
+        "Description": "emotionally positive content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-AP_negative": {
+        "Description": "emotionally negative content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-AP_future": {
+        "Description": "future related content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-AP_past": {
+        "Description": "past related content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-AP_myself": {
+        "Description": "content about myself",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-AP_people": {
+        "Description": "content about others",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-AP_surrpundings": {
+        "Description": "content about the actual surrounding environment",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-AP_vigilance": {
+        "Description": "state of vigilance",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-AP_images": {
+        "Description": "form of thoughts in images",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-AP_words": {
+        "Description": "form of thoughts in words",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-AP_vague": {
+        "Description": "vague to specific form of thoughts",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-AP_intrusive": {
+        "Description": "vague to specific form of thoughts",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-PA_positive": {
+        "Description": "emotionally positive content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-PA_negative": {
+        "Description": "emotionally negative content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-PA_future": {
+        "Description": "future related content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-PA_past": {
+        "Description": "past related content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-PA_myself": {
+        "Description": "[content about myself]",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-PA_people": {
+        "Description": "content about others",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-PA_surrpundings": {
+        "Description": "content about the actual surrounding environment",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-PA_vigilance": {
+        "Description": "state of vigilance",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-PA_images": {
+        "Description": "form of thoughts in images",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-PA_words": {
+        "Description": "form of thoughts in words",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-PA_vague": {
+        "Description": "vague to specific form of thoughts",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-run-02-acq-PA_intrusive": {
+        "Description": "thoughts have a intrusive nature",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-ETS_positive": {
+        "Description": "emotionally positive content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-ETS_negative": {
+        "Description": "emotionally negative content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-ETS_future": {
+        "Description": "future related content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-ETS_past": {
+        "Description": "past related content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-ETS_myself": {
+        "Description": "content about myself",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-ETS_people": {
+        "Description": "content about others",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-ETS_surrpundings": {
+        "Description": "content about the actual surrounding environment",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-ETS_vigilance": {
+        "Description": "state of vigilance",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-ETS_images": {
+        "Description": "form of thoughts in images",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-ETS_words": {
+        "Description": "form of thoughts in words",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-ETS_vague": {
+        "Description": "vague to specific form of thoughts",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-ETS_intrusive": {
+        "Description": "thoughts have a intrusive nature",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-CPTS_positive": {
+        "Description": "emotionally positive content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-CPTS_negative": {
+        "Description": "emotionally negative content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-CPTS_future": {
+        "Description": "future related content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-CPTS_past": {
+        "Description": "past related content",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-CPTS_myself": {
+        "Description": "content about myself",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-CPTS_people": {
+        "Description": "content about others",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-CPTS_surrpundings": {
+        "Description": "content about the actual surrounding environment",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-CPTS_vigilance": {
+        "Description": "state of vigilance",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-CPTS_images": {
+        "Description": "form of thoughts in images",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-CPTS_words": {
+        "Description": "form of thoughts in words",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-CPTS_vague": {
+        "Description": "vague to specific form of thoughts",
+        "Derivative": false,
+    },
+    "SNYCQ_post-ses-02-task-CPTS_intrusive": {
+        "Description": "thoughts have a intrusive nature",
+        "Derivative": false,
+    },
+}

@@ -1,0 +1,14 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Leistungsprüfsystem 2 – logical deductive thinking (LPS-2), questionnaire A, subtest 3 (part of Gf: fluid intelligence)",
+        "TermURL": ""
+    },
+    "LPS_1": {
+      "Description": "LPS raw data, how many symbol-rows did the participant process correctly",
+      "Derivative": true
+    },
+    "LPS_2": {
+      "Description": "Comments",
+      "Derivative": false
+    },
+}

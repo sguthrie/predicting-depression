@@ -1,0 +1,10 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Creative achievement questionnaire (CAQ)",
+        "TermURL": ""
+    },
+    "CAQ_score": {
+        "Description": "Creative Achievement",
+        "Derivative": true,
+    }
+}

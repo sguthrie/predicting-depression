@@ -1,0 +1,118 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Testbatterie zur Aufmerksamkeitsprüfung (TAP_I) – interference tendency",
+        "TermURL": ""
+    },
+    "TAP_I_1": {
+        "Description": "mean time for compatible stimuli",
+        "Derivative": true,
+    },
+    "TAP_I_2": {
+        "Description": "median time for compatible stimuli",
+        "Derivative": true,
+    },
+    "TAP_I_3": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_I_4": {
+        "Description": "standard deviations",
+        "Derivative": true,
+    },
+    "TAP_I_5": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_I_6": {
+        "Description": "how many errors did participant make during compatible stimuli presentation",
+        "Derivative": true,
+    },
+    "TAP_I_7": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_I_8": {
+        "Description": "mean time for incompatible stimuli",
+        "Derivative": true,
+    },
+    "TAP_I_9": {
+        "Description": "median time for incompatible stimuli",
+        "Derivative": true,
+    },
+    "TAP_I_10": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_I_11": {
+        "Description": "standard deviations",
+        "Derivative": true,
+    },
+    "TAP_I_12": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_I_13": {
+        "Description": "how many errors did participant make during incompatible stimuli presentation",
+        "Derivative": true,
+    },
+    "TAP_I_14": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_I_15": {
+        "Description": "mean time for whole stimuli presentation",
+        "Derivative": true,
+    },
+    "TAP_I_16": {
+        "Description": "median time for whole stimuli presentation",
+        "Derivative": true,
+    },
+    "TAP_I_17": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_I_18": {
+        "Description": "standard deviations",
+        "Derivative": true,
+    },
+    "TAP_I_19": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_I_20": {
+        "Description": "how many errors did participant make during whole stimuli presentation",
+        "Derivative": true,
+    },
+    "TAP_I_21": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_I_22": {
+        "Description": "F-value_visual_field",
+        "Derivative": true,
+    },
+    "TAP_I_23": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_I_24": {
+        "Description": "F-value_hand",
+        "Derivative": true,
+    },
+    "TAP_I_25": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_I_26": {
+        "Description": "F-value_visual_field_x_hand",
+        "Derivative": true,
+    },
+    "TAP_I_27": {
+        "Description": "%",
+        "Derivative": true,
+    },
+    "TAP_I_28": {
+        "Description": "comments",
+        "Derivative": true,
+    },
+}

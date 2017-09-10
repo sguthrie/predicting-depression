@@ -1,0 +1,62 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Personality Style and Disorder Inventory (PSSI)",
+        "TermURL": ""
+    },
+    "PSSI_PN": {
+        "Description": "idiosyncratic-paranoid style",
+        "Derivative": true,
+    },
+    "PSSI_SZ": {
+        "Description": "reserved-schizoid style",
+        "Derivative": true,
+    },
+    "PSSI_ST": {
+        "Description": "ominous-schizotypic style",
+        "Derivative": true,
+    },
+    "PSSI_BL": {
+        "Description": "spontaneous-borderline style",
+        "Derivative": true,
+    },
+    "PSSI_HI": {
+        "Description": "amiable-histrionic style",
+        "Derivative": true,
+    },
+    "PSSI_NA": {
+        "Description": "ambitious-narcisstic style",
+        "Derivative": true,
+    },
+    "PSSI_SU": {
+        "Description": "selfcritical-doubtful style",
+        "Derivative": true,
+    },
+    "PSSI_AB": {
+        "Description": "loyal-dependent style",
+        "Derivative": true,
+    },
+    "PSSI_ZW": {
+        "Description": "careful-compulsive style",
+        "Derivative": true,
+    },
+    "PSSI_NT": {
+        "Description": "critical-negativistic style",
+        "Derivative": true,
+    },
+    "PSSI_DP": {
+        "Description": "quiet-depressive style",
+        "Derivative": true,
+    },
+    "PSSI_SL": {
+        "Description": "helpful-selfless style",
+        "Derivative": true,
+    },
+    "PSSI_RH": {
+        "Description": "optimistic-rhapsodic style",
+        "Derivative": true,
+    },
+    "PSSI_AS": {
+        "Description": "asservative-antisocial style",
+        "Derivative": true,
+    }
+}

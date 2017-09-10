@@ -1,0 +1,82 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Adult Self Report (ASR)",
+        "TermURL": ""
+    },
+    "ASR_summary_adaptiveFunctioning_friends_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_summary_adaptiveFunctioning_spouse_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_summary_adaptiveFunctioning_family_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_summary_adaptiveFunctioning_job_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_summary_adaptiveFunctioning_education_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_scale_substanceUse_tabaco_perday": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_scale_substanceUse_alcohol_daysdrunk": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_scale_substanceUse_drugs_daysused": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_summary_criticalItems_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_summary_syndromeProfiles_anxiousdepressed_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_summary_syndromeProfiles_withdrawn_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_summary_syndromeProfiles_somaticComplaints_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_summary_syndromeProfiles_thoughtProblems_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_summary_syndromeProfiles_attentionProblems_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_summary_syndromeProfiles_aggressiveBehavior_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_summary_syndromeProfiles_rulebreakingBehavior_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_summary_syndromeProfiles_intrusive_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_summary_syndromeProfiles_internalizing_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    },
+    "ASR_summary_syndromeProfiles_externalizing_sum": {
+        "Description": "[add]",
+        "Derivative": true,
+    }
+}

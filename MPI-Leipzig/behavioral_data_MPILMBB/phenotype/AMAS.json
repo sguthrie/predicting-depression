@@ -1,0 +1,10 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Abbreviated Math Anxiety Scale (AMAS)",
+        "TermURL": ""
+    },
+    "AMAS_sum": {
+        "Description": "Math anxiety",
+        "Derivative": true,
+    }
+}

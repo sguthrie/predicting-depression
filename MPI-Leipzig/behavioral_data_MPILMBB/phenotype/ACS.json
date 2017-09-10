@@ -1,0 +1,10 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Attention Control Scale (ACS)",
+        "TermURL": ""
+    },
+    "ACS_sum": {
+        "Description": "Attention Control",
+        "Derivative": true,
+    }
+}

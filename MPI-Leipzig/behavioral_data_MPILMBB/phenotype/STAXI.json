@@ -1,0 +1,22 @@
+{
+    "MeasurementToolMetadata": {
+         "Description": "State-Trait Anger Expression Inventory (STAXI)",
+         "TermURL": ""
+     },
+     "STAXI_anger_trait": {
+         "Description": "Trait Anger",
+         "Derivative": true,
+     },
+     "STAXI_anger_inward": {
+         "Description": "Anger inward",
+         "Derivative": true,
+     },
+     "STAXI_anger_outward": {
+         "Description": "Anger outward",
+         "Derivative": true,
+     },
+     "STAXI_anger_control": {
+         "Description": "Anger Control",
+         "Derivative": true,
+     },
+}

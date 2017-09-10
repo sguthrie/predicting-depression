@@ -1,0 +1,10 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Tuckman Procrastination Scale (TPS)",
+        "TermURL": ""
+    },
+    "TPS_sum": {
+        "Description": "Procrastination",
+        "Derivative": true,
+    }
+}

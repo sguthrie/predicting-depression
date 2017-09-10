@@ -1,0 +1,10 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Brief Self-Control Scale (SCS)",
+        "TermURL": ""
+    },
+    "SCS_SelfCtrl_sum": {
+        "Description": "Self-control",
+        "Derivative": true,
+    }
+}

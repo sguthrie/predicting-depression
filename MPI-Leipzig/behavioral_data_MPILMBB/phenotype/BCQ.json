@@ -1,0 +1,18 @@
+{
+    "MeasurementToolMetadata": {
+         "Description": "Body Consciousness questionnaire (BCQ)",
+         "TermURL": ""
+     },
+     "BCQ_private_body_mean": {
+         "Description": "Private Body Consciousness",
+         "Derivative": true,
+     },
+     "BCQ_public_body_mean": {
+         "Description": "Public Body Consciousness",
+         "Derivative": true,
+     },
+     "BCQ_body_competence_mean": {
+         "Description": "Body Competence",
+         "Derivative": true,
+     },
+}

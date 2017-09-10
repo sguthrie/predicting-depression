@@ -1,0 +1,14 @@
+{
+    "MeasurementToolMetadata": {
+         "Description": "Goldsmiths Musical Sophistication Index (Gold-MSI). Only 2 of 5 subscales were measured.",
+         "TermURL": ""
+     },
+     "GoldMSI_Active_sum": {
+         "Description": "Active Musical Engagement",
+         "Derivative": true,
+     },
+     "GoldMSI_Training_sum": {
+         "Description": "Musical Training",
+         "Derivative": true,
+     },
+}

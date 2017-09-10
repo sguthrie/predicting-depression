@@ -1,0 +1,22 @@
+{
+    "MeasurementToolMetadata": {
+         "Description": "Varieties of Inner Speech (VISQ)",
+         "TermURL": ""
+     },
+     "VIS_dialog_sum": {
+         "Description": "Dialogic Inner Speech",
+         "Derivative": true,
+     },
+     "VIS_condensed_sum": {
+         "Description": "Condensed Inner Speech",
+         "Derivative": true,
+     },
+     "VIS_other_sum": {
+         "Description": "Other People in Inner Speech",
+         "Derivative": true,
+     },
+     "VIS_eval_sum": {
+         "Description": "Evaluative/Motivational Inner Speech",
+         "Derivative": true,
+     },
+}

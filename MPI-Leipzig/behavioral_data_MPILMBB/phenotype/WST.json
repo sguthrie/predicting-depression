@@ -1,0 +1,27 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Wortschatztest (WST) – vocabulary test",
+        "TermURL": ""
+    },
+    "WST_1": {
+        "Description": "WST raw data; how many real words did the participant correctly indicated",
+        "Derivative": true,
+    },
+    "WST_2": {
+        "Description": "z-scale",
+        "Derivative": true,
+    },
+    "WST_3": {
+        "Description": "IQ-scale",
+        "Derivative": true,
+    },
+    "WST_4": {
+        "Description": "Z-scale",
+        "Derivative": true,
+    },
+    "WST_5": {
+        "Description": "comments",
+        "Derivative": true,
+    },
+}
+

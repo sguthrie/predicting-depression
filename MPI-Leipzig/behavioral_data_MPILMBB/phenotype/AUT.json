@@ -1,0 +1,22 @@
+{
+   "MeasurementToolMetadata": {
+        "Description": "Alternative Uses Task (AUT)",
+        "TermURL": ""
+    },
+    "AUT_Fluency": {
+      "Description": "Fluency",
+      "Derivative": true
+    },
+    "AUT_creative_quality": {
+      "Description": "Creative quality",
+      "Derivative": true
+    },
+    "AUT_Elaboration_mean": {
+      "Description": "Elaboration",
+      "Derivative": true
+    },
+    "AUT_Average_Uniqueness": {
+      "Description": "Uniqueness",
+      "Derivative": true
+    }
+}

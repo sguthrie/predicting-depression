@@ -1,0 +1,26 @@
+{
+    "MeasurementToolMetadata": {
+         "Description": "UPPS-P Impulsive Behavior Scale",
+         "TermURL": ""
+     },
+     "UPPS_Mean_NegUrg": {
+         "Description": "Negative Urgency",
+         "Derivative": true,
+     },
+     "UPPS_Mean_Premed": {
+         "Description": "(Lack of) Premeditation",
+         "Derivative": true,
+     },
+     "UPPS_Mean_Persev": {
+         "Description": "(Lack of) Perseverence",
+         "Derivative": true,
+     },
+     "UPPS_Mean_SS": {
+         "Description": "Sensation Seeking",
+         "Derivative": true,
+     },
+     "UPPS_Mean_PosUrg": {
+         "Description": "Positive Urgency",
+         "Derivative": true,
+     },
+}
