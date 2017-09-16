@@ -1,0 +1,16 @@
+FROM neurodebian:nd16.10
+
+RUN apt-get update \
+    && apt-get upgrade -y \
+    && apt-get install -qy \
+    datalad \
+    python3 \
+    python3-pip
+
+RUN pip3 install datalad
+
+ADD scripts /scripts
+
+VOLUME ["/data"]
+
+ENTRYPOINT ["python3", "scripts/find_subjects_neuro_data_lite.py"]
