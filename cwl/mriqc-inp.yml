@@ -1,0 +1,5 @@
+inp_dir:
+  class: Directory
+  path: ~/Documents/github/sguthrie/predicting-depression/datalad_datasets
+
+participants: [010001, 010002, 010003]
