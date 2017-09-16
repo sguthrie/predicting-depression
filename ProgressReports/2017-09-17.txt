@@ -1,0 +1,52 @@
+Work In Progress
+==================
+
+## Theoretical Motivation
+
+## Research Design
+
+1. Choose a dataset with at least 100 subjects who cover a range of depressive
+   symptoms.
+   - The MPI-Leipzig dataset has ~6 moderately depressed subjects by the BDI
+     score. All subjects in the lower three-quartiles are not considered to be
+     depressed. [BDI](https://www.commondataelements.ninds.nih.gov/doc/noc/beck_depression_inventory_noc_link.pdf)
+   - This pattern is continued by the HADS-D score.
+2. Find subjects which have behavioral data of BDI, HADS-D, and NEO-N, and do not
+   fail quality control testing (as run by mriqc).
+3. Preprocess the subjects fulfilling the above requirements.
+4. Build a connectome for each subject using nilearn.
+5. Separate subjects into a large training set and a small test set. (Note, we
+   may also choose a new dataset.)
+6. Build 3 cognitive-based predictive model (CPM) to predict depressive
+   phenotypes: BDI, HADS-D, and NEO-N.
+   - For each edge in all subjects connectomes, correlate the strength of that
+     edge with the phenotype score. Edges that are most strongly related to
+     behavior in the positive and negative directions are retained for model
+     building. Use cross-validation to ensure reliability of the positive network
+     and the negative network.
+   - Build a linear model relating each individual’s positive network strength
+     (i.e., the sum of the connections in their positive network) and negative
+     network strength (i.e., the sum of the connections in their negative
+     network) to their behavioral score.
+7. Check the validity of the model against the test set. Predictive power is
+   assessed by correlating predicted and observed behavioral scores across
+   the group.
+
+CPM is based on https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5366090/
+
+All computing is currently planning to run these using cwl-runner on Arvados,
+which offers a free trial for reproducible computing.
+
+## Statistical Analysis
+
+- Building the CPM
+- Finding the predictive power
+
+## Code Development
+
+[X] QC and dataset exploration (cwl/mriqc.cwl, scripts/find_subject_data.py, and
+    scripts/find_subjects_neuro_data.py)
+[\] Preprocessing (scripts/preprocess_subjects.py)
+[ ] Building a connectome
+[ ] Building a CPM
+[ ] Checking the validity

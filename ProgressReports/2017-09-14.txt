@@ -1,0 +1,17 @@
+Project Name: Predicting Depression
+-----------------------------------
+
+Description
+------------
+
+We aim to build a regressor from MRI data that enables prediction
+of a depressive phenotype (as measured by NEO, HADS, BDI, etc).
+The base plan is to derive a connectome from resting-state fMRI data
+from the MPI-Leipzig Mind-Brain-Body dataset, then build a
+cognitive-based predictive model (CPM) to predict depressive phenotypes.
+The accuracy of our model will be tested using cross-validation.
+
+Team
+-----
+Technology is Magic
+ - sguthrie
