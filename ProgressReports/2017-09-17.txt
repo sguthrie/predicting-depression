@@ -1,16 +1,27 @@
-Work In Progress
+Progress Report
 ==================
 
 ## Theoretical Motivation
 
+20% of all people are expected to fulfill the criteria for major depressive
+disorder (MDD) at some point in their lifetime, and MDD is the second leading
+contributor to chronic disease burden, yet 50% of patients do not respond or
+remiss to their first treatment[^Benazzi] [^Gartlehner] [^Otte].
+
+We hope to build a model with a known confidence from over 100 subjects that
+can predict depression severity given the resting-state fMRI of a subject. We
+predict the connectivity patterns weighted by the model will implicate regions
+and tracts affected by and necessary for a depressive phenotype, furthering
+research into the etiology of depression.
+
 ## Research Design
 
 1. Choose a dataset with at least 100 subjects who cover a range of depressive
-   symptoms.
-   - The MPI-Leipzig dataset has ~6 moderately depressed subjects by the BDI
-     score. All subjects in the lower three-quartiles are not considered to be
-     depressed. [BDI](https://www.commondataelements.ninds.nih.gov/doc/noc/beck_depression_inventory_noc_link.pdf)
-   - This pattern is continued by the HADS-D score.
+   severity.
+   - The MPI-Leipzig dataset has ~6 moderately depressed subjects measured
+     using the Beck Depression Inventory (BDI). All subjects in the lower
+     three-quartiles  are not considered to be depressed. [BDI](https://www.commondataelements.ninds.nih.gov/doc/noc/beck_depression_inventory_noc_link.pdf)
+   - This pattern is also observed using the HADS-D score to measure depression.
 2. Find subjects which have behavioral data of BDI, HADS-D, and NEO-N, and do not
    fail quality control testing (as run by mriqc).
 3. Preprocess the subjects fulfilling the above requirements.
@@ -32,21 +43,43 @@ Work In Progress
    assessed by correlating predicted and observed behavioral scores across
    the group.
 
-CPM is based on https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5366090/
+CPM will be based on the research done by Shen *et al*, 2017[^Shen].
 
-All computing is currently planning to run these using cwl-runner on Arvados,
-which offers a free trial for reproducible computing.
+All computing is currently planned to run using cwl-runner on Arvados, which
+provides a reproducible computing infrastructure.
 
 ## Statistical Analysis
 
-- Building the CPM
-- Finding the predictive power
+The statistical analysis involved in this project will involve correlating the
+strength of each edge with the phenotype score, model-fitting the CPM, and
+using cross-validation.
+
+Building a CPM uses a form of linear regression, such as Pearson's correlation,
+Spearman's correlation, or robust regression. We plan to use Spearman's rank
+correlation instead of Pearson's correlation, since depressive severity does
+not follow a normal distribution in our data. We will use a significance
+threshold of $P=0.01$ to choose significantly positive or negative edges in the
+CPM.
+
+We will fit the CPM model using a least squares polynomial fit (numpy.polyfit)
+
+We shall evaluate the mean squared error and the true prediction correlation to
+to evaluate the prediction performance of the CPM model.
 
 ## Code Development
 
-[X] QC and dataset exploration (cwl/mriqc.cwl, scripts/find_subject_data.py, and
-    scripts/find_subjects_neuro_data.py)
-[\] Preprocessing (scripts/preprocess_subjects.py)
+[X] Dataset exploration (scripts/find_subject_data.py, and scripts/find_subjects_neuro_data.py)
+[/] QC (cwl/mriqc.cwl)
+[/] Preprocessing (scripts/preprocess_subjects.py)
 [ ] Building a connectome
 [ ] Building a CPM
-[ ] Checking the validity
+[ ] Evaluating the prediction performace of the CPM
+
+[^Benazzi]: Benazzi F (2006). Various forms of depression. **Dialogues Clin. Neurosci.** 8, 151-161.
+
+[^Gartlehner]: Gartlehner G, Thaler K, Hill S, *et al* (2012). How should primary care doctors select which
+antidepressants to administer? **Curr. Psychiatry Rep.** 14, 360-369.
+
+[^Otte]:  Otte C, Gold SM, Pennix BW, *et al* (2016). Major depressive disorder. **Nature Reviews.** 2, 1-20.
+
+[^Shen]: Shen X, Finn ES, Scheinost D, *et al* (2017). Using connectome-based predictive modeling to predict individual behavior from brain connectivity. **Nature Protocols** 12, 506-518.
