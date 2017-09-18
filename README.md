@@ -31,7 +31,7 @@ All computing is currently planned to run using cwl-runner on Arvados, which pro
 
 The statistical analysis involved in this project will involve correlating the strength of each edge with the phenotype score, model-fitting the CPM, and using cross-validation.
 
-Building a CPM uses a form of linear regression, such as Pearson's correlation, Spearman's correlation, or robust regression. We plan to use Spearman's rank correlation instead of Pearson's correlation, since depressive severity does not follow a normal distribution in our data. We will use a significance threshold of $P=0.01$ to choose significantly positive or negative edges in the CPM.
+Building a CPM uses a form of linear regression, such as Pearson's correlation, Spearman's correlation, or robust regression. We plan to use Spearman's rank correlation instead of Pearson's correlation, since depressive severity does not follow a normal distribution in our data. We will use a significance threshold of P=0.01 to choose significantly positive or negative edges in the CPM.
 
 We will fit the CPM model using a least squares polynomial fit (numpy.polyfit)
 
@@ -40,10 +40,15 @@ We shall evaluate the mean squared error and the true prediction correlation to 
 ## Code Development
 
 [X] Dataset exploration (scripts/find_subject_data.py, and scripts/find_subjects_neuro_data.py)
+
 [/] QC (cwl/mriqc.cwl)
+
 [/] Preprocessing (scripts/preprocess_subjects.py)
+
 [ ] Building a connectome
+
 [ ] Building a CPM
+
 [ ] Evaluating the prediction performace of the CPM
 
 
