@@ -2,6 +2,8 @@
 
 Project to downloading the resting-state fMRI data and behavioral data from MPI-Leipzig Mind-Brain-Body dataset, preprocess the MRI data through NiPype, building regressors on the MRI and behavioral data to predict depressive behaviors, and predicting depressive behaviors from resting-state fMRI data: either by separating the MPI-Leipzig data into test-training groups or by accessing the Brain Genomics Superstruct project, which has the NEO behavioral data for its subjects.
 
+Ultimately, we hope this project will be used for even more: specifically, expanding to different types of neuroimaging data (sMRI and DTI).
+
 ## Theoretical Motivation
 
 20% of all people are expected to fulfill the criteria for major depressive disorder (MDD) at some point in their lifetime, and MDD is the second leading contributor to chronic disease burden, yet 50% of patients do not respond or remiss to their first treatment (Benazzi 2006, Gartlehner *et al* 2012, Otte *et al* 2016).
@@ -17,7 +19,7 @@ We hope to build a model with a known confidence from over 100 subjects that can
 3. Preprocess the subjects fulfilling the above requirements.
 4. Build a connectome for each subject using nilearn.
 5. Separate subjects into a large training set and a small test set. (Note, we may choose to use the GSP dataset as our test set.)
-6. Build 3 cognitive-based predictive model (CPM) to predict depressive
+6. Build 3 cognitive-based predictive models (CPM) to predict depressive
    phenotypes: BDI, HADS-D, and NEO-N.
    - For each edge in all subjects connectomes, correlate the strength of that edge with the phenotype score. Edges that are most strongly related to behavior in the positive and negative directions are retained for model building. Use cross-validation to ensure reliability of the positive network and the negative network.
    - Build a linear model relating each individual’s positive network strength (i.e., the sum of the connections in their positive network) and negative network strength (i.e., the sum of the connections in their negative network) to their behavioral score.
@@ -51,8 +53,6 @@ We shall evaluate the mean squared error and the true prediction correlation to 
 
 [ ] Evaluating the prediction performace of the CPM
 
-
-Ultimately, we hope this project will be used for even more: specifically, expanding to different types of neuroimaging data (sMRI and DTI).
 
 # MRI Data Basics
 
