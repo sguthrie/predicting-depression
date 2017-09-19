@@ -50,18 +50,13 @@ def find_subjects_with_reported_behavior(subjects, behavior_name, filepath):
                 add_to_subjects(subjects, subject, behavior_name)
     return subjects
 
-def get_data(paths_and_keys):
-    path_and_key = []
-    for i, inp in enumerate(paths_and_keys):
-        if i % 2 == 0:
-            path_and_key.append([inp])
-        else:
-            path_and_key[int(i/2)].append(inp)
+def get_data(behavior_paths, behavior_keys):
+    assert len(behavior_paths) == len(behavior_keys), "Behavior files must be matched \
+        one-to-one with behavior keys. Number of behavior files: %i. \
+        Number of behavior keys: %i" % (len(behavior_paths), len(behavior_keys))
     subjects = {}
-    behavior_keys = []
-    for path, behavior_key in path_and_key:
+    for path, behavior_key in zip(behavior_paths, behavior_keys):
         subjects = find_subjects_with_reported_behavior(subjects, behavior_key, path)
-        behavior_keys.append(behavior_key)
     num_subjects_with_all_data = 0
     complete_subjects = {}
     raw_data = {behavior_key:[] for behavior_key in behavior_keys}
@@ -70,13 +65,13 @@ def get_data(paths_and_keys):
         for behavior_key in behavior_keys:
             if behavior_key in subjects[subject]:
                 raw_data[behavior_key].append(subjects[subject][behavior_key])
-        if len(subjects[subject]) == len(path_and_key):
+        if len(subjects[subject]) == len(behavior_paths):
             num_subjects_with_all_data += 1
             complete_subjects[subject] = subjects[subject]
             for behavior_key in behavior_keys:
                 complete_raw_data[behavior_key].append(subjects[subject][behavior_key])
     print("%i subjects have data in all given files" % num_subjects_with_all_data)
-    return subjects, complete_subjects, raw_data, complete_raw_data, behavior_keys
+    return subjects, complete_subjects, raw_data, complete_raw_data
 
 def draw_figure(behavior_keys, raw_data, complete_raw_data, autoscale=True):
     if autoscale:
@@ -95,12 +90,9 @@ def draw_figure(behavior_keys, raw_data, complete_raw_data, autoscale=True):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("behavior", help="At least 2 arguments required. First is the \
-        file path to the TSV file. Second is the key name found in the first \
-        row of the tsv file",
-        nargs='+', metavar="File paths and behavior keys")
+    parser.add_argument("-bf", "--behavior-files", help="TSV file paths", action='append')
+    parser.add_argument("-bk", "--behavior-keys", help="keys to use for each TSV file", action="append")
     args = parser.parse_args()
-    assert len(args.behavior) % 2 == 0, "File paths and behavior keys must be tuples"
-    subjects, complete_subjects, raw_data, complete_raw_data, behavior_keys = get_data(args.behavior)
-    draw_figure(behavior_keys, raw_data, complete_raw_data, autoscale=False)
+    subjects, complete_subjects, raw_data, complete_raw_data = get_data(args.behavior_files, args.behavior_keys)
+    draw_figure(args.behavior_keys, raw_data, complete_raw_data, autoscale=False)
     plt.show()
