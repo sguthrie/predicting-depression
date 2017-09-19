@@ -1,0 +1,30 @@
+FROM debian:jessie
+
+RUN apt-get update -q && apt-get install -yq \
+    bison build-essential gettext libcurl3 libcurl3-gnutls \
+    libcurl4-openssl-dev libpcre3-dev libreadline-dev \
+    libssl-dev libxslt1.1 zlib1g-dev
+
+RUN mkdir -p /src
+
+WORKDIR /src
+
+RUN curl -f http://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.3.tar.gz | tar xz
+WORKDIR ruby-2.3.3
+
+RUN ./configure --disable-install-rdoc
+RUN make && make install
+RUN gem install bundler
+
+WORKDIR /
+
+RUN apt-get update -q && apt-get install -yq \
+  libcurl3 \
+  libcurl3-gnutls \
+  libcurl4-openssl-dev \
+  python \
+  python-dev \
+  python-pip
+
+RUN gem install arvados-cli
+RUN pip install arvados-python-client arvados-cwl-runner

@@ -1,0 +1,42 @@
+###################
+# Unsuccessful
+###################
+
+FROM debian:stretch
+
+RUN apt-get update -q && apt-get -yq install \
+    bison \
+    build-essential \
+    fuse \
+    gettext \
+    git \
+    libattr1-dev \
+    libcurl3 \
+    libcurl3-gnutls \
+    libcurl4-openssl-dev \
+    libpcre3-dev \
+    libreadline-dev \
+    libssl-dev \
+    libxslt1.1 \
+    libfuse-dev \
+    mercurial \
+    python-dev \
+    python-setuptools \
+    python-fuse \
+    python-llfuse \
+    python-lockfile \
+    python-docutils \
+    python-pip \
+    ruby \
+    zlib1g-dev
+
+RUN pip install pyasn1==0.3.5
+
+RUN mkdir -p /src
+
+WORKDIR /src
+RUN git clone https://github.com/curoverse/arvados
+WORKDIR arvados/services/fuse/
+RUN python setup.py install
+
+WORKDIR /

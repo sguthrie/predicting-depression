@@ -1,0 +1,107 @@
+# Copyright (C) The Arvados Authors. All rights reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+
+# Requires specifying python_sdk_version and cwl_runner_version
+# I'm installing with
+# python_sdk_version=0.1.20170818194607-2
+# cwl_runner_version=1.0.20170918141358-3
+
+# Based on Debian Jessie
+FROM debian:jessie
+
+ENV DEBIAN_FRONTEND noninteractive
+
+##############
+# Installing neurodebian packages
+##############
+
+# https://bugs.debian.org/830696 (apt uses gpgv by default in newer releases, rather than gpg)
+RUN set -x \
+	&& apt-get update \
+	&& { \
+		which gpg \
+# prefer gnupg2, to match APT's Recommends
+		|| apt-get install -y --no-install-recommends gnupg2 \
+		|| apt-get install -y --no-install-recommends gnupg \
+	; } \
+# Ubuntu includes "gnupg" (not "gnupg2", but still 2.x), but not dirmngr, and gnupg 2.x requires dirmngr
+# so, if we're not running gnupg 1.x, explicitly install dirmngr too
+	&& { \
+		gpg --version | grep -q '^gpg (GnuPG) 1\.' \
+		|| apt-get install -y --no-install-recommends dirmngr \
+	; } \
+	&& rm -rf /var/lib/apt/lists/*
+
+# apt-key is a bit finicky during "docker build" with gnupg 2.x, so install the repo key the same way debian-archive-keyring does (/etc/apt/trusted.gpg.d)
+# this makes "apt-key list" output prettier too!
+RUN set -x \
+	&& export GNUPGHOME="$(mktemp -d)" \
+	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 \
+	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg \
+	&& rm -rf "$GNUPGHOME" \
+	&& apt-key list | grep neurodebian
+
+RUN { \
+	echo 'deb http://neuro.debian.net/debian jessie main'; \
+	echo 'deb http://neuro.debian.net/debian data main'; \
+	echo '#deb-src http://neuro.debian.net/debian-devel jessie main'; \
+} > /etc/apt/sources.list.d/neurodebian.sources.list
+
+######################
+# Installing Arvados software
+######################
+
+ADD apt.arvados.org.list /etc/apt/sources.list.d/
+RUN apt-key adv --keyserver pool.sks-keyservers.net --recv 1078ECD7
+RUN gpg --keyserver pool.sks-keyservers.net --recv-keys D39DC0E3
+
+ARG python_sdk_version
+ARG cwl_runner_version
+RUN echo cwl_runner_version $cwl_runner_version python_sdk_version $python_sdk_version
+
+RUN apt-get update -q
+RUN apt-get install -yq --no-install-recommends \
+    git python-pip python-virtualenv \
+    python-dev libgnutls28-dev libcurl4-gnutls-dev nodejs \
+    python-arvados-python-client=$python_sdk_version \
+    python-arvados-cwl-runner=$cwl_runner_version
+
+# Install dependencies and set up system.
+RUN /usr/sbin/adduser --disabled-password \
+      --gecos 'Crunch execution user' crunch && \
+    /usr/bin/install --directory --owner=crunch --group=crunch --mode=0700 /keep /tmp/crunch-src /tmp/crunch-job
+
+
+######################
+# Installing datalad
+######################
+
+RUN apt-get update \
+    && apt-get install -qy \
+    datalad \
+		libfreetype6-dev \
+		libffi-dev \
+    libssl-dev \
+		libpng-dev \
+		libxft-dev \
+    python3 \
+    python3-pip
+
+# libffi-dev and libssl-dev required for python-datalad
+# libfreetype6-dev, libxft-dev and libpng12-dev required for matplotlib
+
+RUN pip install \
+	datalad \
+	matplotlib \
+	numpy
+
+ADD scripts /home/crunch/scripts
+ADD MPI-Leipzig/behavioral_data_MPILMBB/phenotype /home/crunch/phenotype
+
+######################
+# User crunch for Arvados
+######################
+
+USER crunch
+WORKDIR /home/crunch

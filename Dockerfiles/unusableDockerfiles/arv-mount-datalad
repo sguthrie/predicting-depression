@@ -1,0 +1,106 @@
+###################
+# Unsuccessful
+###################
+
+FROM debian:stretch
+
+##############
+# Installing arv-mount
+##############
+
+RUN apt-get update -q && apt-get -yq install \
+    bison \
+    build-essential \
+    fuse \
+    gettext \
+    git \
+    libattr1-dev \
+    libcurl3 \
+    libcurl3-gnutls \
+    libcurl4-openssl-dev \
+    libpcre3-dev \
+    libreadline-dev \
+    libssl-dev \
+    libxslt1.1 \
+    libfuse-dev \
+    mercurial \
+    python-dev \
+    python-setuptools \
+    python-fuse \
+    python-llfuse \
+    python-lockfile \
+    python-docutils \
+    python-pip \
+    ruby \
+    zlib1g-dev
+
+RUN pip install pyasn1==0.3.5
+
+RUN mkdir -p /src
+
+WORKDIR /src
+RUN git clone https://github.com/curoverse/arvados
+WORKDIR arvados/services/fuse/
+RUN python setup.py install
+
+WORKDIR /
+
+##############
+# Installing neurodebian packages
+##############
+
+# https://bugs.debian.org/830696 (apt uses gpgv by default in newer releases, rather than gpg)
+RUN set -x \
+	&& apt-get update \
+	&& { \
+		which gpg \
+# prefer gnupg2, to match APT's Recommends
+		|| apt-get install -y --no-install-recommends gnupg2 \
+		|| apt-get install -y --no-install-recommends gnupg \
+	; } \
+# Ubuntu includes "gnupg" (not "gnupg2", but still 2.x), but not dirmngr, and gnupg 2.x requires dirmngr
+# so, if we're not running gnupg 1.x, explicitly install dirmngr too
+	&& { \
+		gpg --version | grep -q '^gpg (GnuPG) 1\.' \
+		|| apt-get install -y --no-install-recommends dirmngr \
+	; } \
+	&& rm -rf /var/lib/apt/lists/*
+
+# apt-key is a bit finicky during "docker build" with gnupg 2.x, so install the repo key the same way debian-archive-keyring does (/etc/apt/trusted.gpg.d)
+# this makes "apt-key list" output prettier too!
+RUN set -x \
+	&& export GNUPGHOME="$(mktemp -d)" \
+	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 \
+	&& gpg --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg \
+	&& rm -rf "$GNUPGHOME" \
+	&& apt-key list | grep neurodebian
+
+RUN { \
+	echo 'deb http://neuro.debian.net/debian stretch main'; \
+	echo 'deb http://neuro.debian.net/debian data main'; \
+	echo '#deb-src http://neuro.debian.net/debian-devel stretch main'; \
+} > /etc/apt/sources.list.d/neurodebian.sources.list
+
+######################
+# Installing datalad and home-grown scripts
+######################
+
+RUN apt-get update -q && apt-get install --fix-missing -qy \
+  datalad \
+  libfreetype6-dev \
+  libffi-dev \
+  libssl-dev \
+  libpng-dev \
+  libxft-dev \
+  python3 \
+  python3-pip
+
+# libffi-dev and libssl-dev required for python-datalad
+# libfreetype6-dev, libxft-dev and libpng12-dev required for matplotlib
+
+RUN pip3 install \
+  datalad \
+  matplotlib \
+  numpy
+
+ADD scripts /home/crunch/scripts
