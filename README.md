@@ -56,11 +56,52 @@ We shall evaluate the mean squared error and the true prediction correlation to 
 
 # MRI Data Basics
 
-sguthrie has written a Jupyter Notebook that summarizes her current working knowledge of the basics of MRI data and which data are available in the MPI-Leipzig dataset. This is a work-in-progress. A non-interactive view of the page may be found using [here](https://github.com/sguthrie/predicting-depression/blob/master/MRI%20Data%20Basics%20and%20the%20MPI-Leipzig%20Dataset.ipynb).
+sguthrie has written a Jupyter Notebook that summarizes her current working knowledge of the basics of MRI data and which data are available in the MPI-Leipzig dataset. This is a work-in-progress. A non-interactive view of the page may be found [here](https://github.com/sguthrie/predicting-depression/blob/master/MRI%20Data%20Basics%20and%20the%20MPI-Leipzig%20Dataset.ipynb).
 
 # Getting to know the MPI-Leipzig Mind-Brain-Body Dataset
 
 We provide a Jupyter Notebook allowing users to investigate what range of behavioral data is available from the MPI-Leipzig dataset. A non-interactive view of the page may be found using [nbviewer](https://nbviewer.jupyter.org/github/sguthrie/predicting-depression/blob/master/MPI-LeipzigDataset.ipynb).
+
+
+# Uploading your chosen dataset to Arvados
+
+Once you have chosen a set of behavioral data that have an appropriate range and number, you will probably want to actually get the imaging data associated with them. sguthrie has chosen to upload the data to a cloud server running [Arvados](https://doc.arvados.org/), an open-source computing system which enables large data storage and reproducible computing (disclosure: sguthrie worked at Curoverse, which maintained and built Arvados).
+
+<div class="alert alert-warning">
+`download_subjects_neuro_data_to_arvados.py` only uploads to a specific project. If anyone wants to run this code, please update `download_subjects_neuro_data_to_arvados.py` with the appropriate project-uuid. Note: this requires using Option 2 to build the docker image!
+</div>
+
+The script `download_subjects_neuro_data_to_arvados.py` will install a datalad dataset, query over behavioral data and filter subjects who only have that data stored, get the imaging data for each subject, and upload that data to a Collection in an Arvados project. It does this in such a way that only one subject's imaging data is stored on the user's system at a time, avoiding possible out of space errors. It requires a system with the Arvados python SDK and datalad installed.
+
+## Building the system (docker image)
+
+### Option 1: Using Dockerhub
+
+Pull the pre-built image from Dockerhub:
+`$ docker pull sguthrie/arv-pysdk-datalad`
+
+### Option 2: Build image from source
+
+1. Move `apt.arvados.org.list` and `arv-pysdk-datalad` from the directory `Dockerfiles` to its parent directory.
+2. Rename `arv-pysdk-datalad` to `Dockerfile`.
+3. In `predicting-depression`, build the image
+   `predicting-depression $ docker build -t <image-tag> --build-arg python_sdk_version=<apt-get version to install> --build-arg cwl_runner_version=<apt-get version to install> .`
+
+## Running the system and uploading data
+
+> **It is highly suggested that you run the following in a screen**
+
+Run your image interactively (Yes, it is theoretically possible to build the image such that it runs non-interactively, it just hasn't been done; if you care strongly, create an issue). You will need to specify environment variables for Arvados tokens, which grant permissions to upload and interact with data. These may be found after you sign up in an Arvados cluster by choosing `Current Token` under the drop-down.
+
+`$ docker run -it --rm -e ARVADOS_API_TOKEN=<token> -e ARVADOS_API_HOST=<host> <image-tag> \bin\bash`
+
+Once inside the container, you can run `download_subjects_neuro_data_to_arvados.py`. The below example will upload all subjects that have BDI, HADS-D, and NEO-N scores, using only one core. It will take about 4 hours.
+
+<div class="alert alert-warning">
+The Arvados SDK is only python2.7 compatible! Currently, all scripts in use are both 2.7 and 3 compatible, but `download_subjects_neuro_data_to_arvados.py` must be run in python2.
+</div>
+
+`$ python scripts/download_subjects_neuro_data_to_arvados.py --get-data -bf phenotype/BDI.tsv -bk BDI_summary_sum -bf phenotype/HADS.tsv -bk HADS-D_summary_sum -bf phenotype/NEO.tsv -bk NEO_N /home/crunch ///openfmri/ds000221`
 
 
 # References
