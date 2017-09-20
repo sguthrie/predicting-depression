@@ -41,7 +41,7 @@ We shall evaluate the mean squared error and the true prediction correlation to 
 
 ## Code Development
 
- - [x] Dataset exploration (scripts/find_subject_data.py, and scripts/find_subjects_neuro_data.py)
+ - [x] Dataset exploration (scripts/find_subject_data.py, scripts/find_subjects_neuro_data.py, and scripts/download_subjects_neuro_data_to_arvados)
  - [ ] QC (cwl/mriqc.cwl)
  - [ ] Preprocessing (scripts/preprocess_subjects.py)
  - [ ] Building a connectome
@@ -62,12 +62,8 @@ We provide a Jupyter Notebook allowing users to investigate what range of behavi
 
 Once you have chosen a set of behavioral data that have an appropriate range and number, you will probably want to actually get the imaging data associated with them. sguthrie has chosen to upload the data to a cloud server running [Arvados](https://doc.arvados.org/), an open-source computing system which enables large data storage and reproducible computing (disclosure: sguthrie worked at Curoverse, which maintained and built Arvados).
 
-> **WARNING**
-> `download_subjects_neuro_data_to_arvados.py` only uploads to a specific project. If anyone wants to run this code, please update `download_subjects_neuro_data_to_arvados.py` with the appropriate project-uuid.
-> Note: this requires using Option 2 to build the docker image!
 
-
-The script `download_subjects_neuro_data_to_arvados.py` will install a datalad dataset, query over behavioral data and filter subjects who only have that data stored, get the imaging data for each subject, and upload that data to a Collection in an Arvados project. It does this in such a way that only one subject's imaging data is stored on the user's system at a time, avoiding possible out of space errors. It requires a system with the Arvados python SDK and datalad installed.
+The script `download_subjects_neuro_data_to_arvados.py` will install a datalad dataset, query over behavioral data and filter subjects who only have that data stored, get the imaging data for each subject, and upload that data to a Collection in an Arvados project (one Collection per subject). It does this in such a way that only one subject's imaging data is stored on the user's system at a time, avoiding possible out of space errors. It requires a system with the Arvados python SDK and datalad installed.
 
 ## Building the system (docker image)
 
@@ -99,7 +95,7 @@ Once inside the container, you can run `download_subjects_neuro_data_to_arvados.
 > The Arvados SDK is only python2.7 compatible! Currently, all scripts in use are both 2.7 and 3 compatible, but `download_subjects_neuro_data_to_arvados.py` must be run in python2.
 
 
-`$ python scripts/download_subjects_neuro_data_to_arvados.py --get-data -bf phenotype/BDI.tsv -bk BDI_summary_sum -bf phenotype/HADS.tsv -bk HADS-D_summary_sum -bf phenotype/NEO.tsv -bk NEO_N /home/crunch ///openfmri/ds000221`
+`$ python scripts/download_subjects_neuro_data_to_arvados.py --get-data -bf phenotype/BDI.tsv -bk BDI_summary_sum -bf phenotype/HADS.tsv -bk HADS-D_summary_sum -bf phenotype/NEO.tsv -bk NEO_N <project_uuid> /home/crunch ///openfmri/ds000221`
 
 
 # References
